@@ -1,0 +1,36 @@
+{
+  "name": "pp-tefeta",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img alt=\"\" src=\"./tefeta.logo.png\"> </p>",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn babel src/ --out-dir .dist --extensions '.ts' --quiet",
+    "start": "yarn build && node .dist/main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pu-erh/pp-tefeta.git"
+  },
+  "author": "Steven Renault",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pu-erh/pp-tefeta/issues"
+  },
+  "homepage": "https://github.com/pu-erh/pp-tefeta#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-decorators": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/node": "^14.0.13",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "chalk": "^4.1.0"
+  }
+}
